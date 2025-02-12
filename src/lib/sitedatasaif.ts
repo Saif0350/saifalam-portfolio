@@ -5,13 +5,10 @@ import BlogImg2x from "../../public/images/blog-img@2x.jpg";
 import BlogImgWide from "../../public/images/blog-img-wide.jpg";
 import PortfolioImg from "../../public/images/portfolio-img.jpg";
 import PortfolioImgWide from "../../public/images/portfolio-img-wide.jpg";
-import TestimonialAvatar from "../../public/images/testimonial-avatar.jpg";
 import {
   Brush,
   Code,
-  Facebook,
   Instagram,
-  Laptop,
   Linkedin,
   Smartphone,
   Twitter,

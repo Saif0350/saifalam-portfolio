@@ -1,7 +1,6 @@
 "use client";
 
 import { portfolioData } from "@/lib/sitedatasaif";
-import Wrapper from "../Wrapper/Wrapper";
 import ProjectCard from "./ProjectCard";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -58,7 +57,7 @@ const Portfolio = () => {
       </div>
 
       <div ref={cardsRef} className="  gap-10 flex w-full relative ">
-        {projectsData.map((pro, index) => (
+        {projectsData.map((pro) => (
           <div key={pro.id} className=" ">
             <ProjectCard data={pro} />
           </div>

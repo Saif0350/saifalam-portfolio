@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { projects } from "@/lib/projectsData2";
 import { ProjectCard2 } from "./ProjectCard2";
 import projectsData from "@/lib/projectsData";
 
