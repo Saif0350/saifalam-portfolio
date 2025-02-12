@@ -6,6 +6,16 @@ import BlogImgWide from "../../public/images/blog-img-wide.jpg";
 import PortfolioImg from "../../public/images/portfolio-img.jpg";
 import PortfolioImgWide from "../../public/images/portfolio-img-wide.jpg";
 import TestimonialAvatar from "../../public/images/testimonial-avatar.jpg";
+import {
+  Brush,
+  Code,
+  Facebook,
+  Instagram,
+  Laptop,
+  Linkedin,
+  Smartphone,
+  Twitter,
+} from "lucide-react";
 
 export const headerData = {
   logo: "Saif Alam",
@@ -26,14 +36,7 @@ export const headerData = {
       url: "/#awards",
       title: "Awards",
     },
-    {
-      url: "/#testimonial",
-      title: "Testimonial",
-    },
-    {
-      url: "/#blog",
-      title: "Blog",
-    },
+
     {
       url: "/#contact",
       title: "Contact",
@@ -46,40 +49,30 @@ export const aboutData = {
     name: "Saif Alam Ansari",
     heroAvatar: HeroAvatar,
     biography:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-    projectsDone: "432",
-    yearsOfExperience: "13",
-    worldwideClients: "900",
+      "With 4 years of experience, I specialize in Web Development, UI/UX Design and App Development. My goal is to craft high-performing digital solutions that help businesses thrive.",
+    projectsDone: "50",
+    yearsOfExperience: "4",
+    worldwideClients: "10",
   },
   skills: [
-    {
-      name: "Web Development",
-    },
-    {
-      name: "UI & UX Design",
-    },
-    {
-      name: "Marketing",
-    },
-    {
-      name: "SEO",
-    },
-    {
-      name: "Management",
-    },
+    { name: "Web Development" },
+    { name: "UI & UX Design" },
+    { name: "App Development" },
+    { name: "SEO" },
+    { name: "Management" },
   ],
   connect: [
     {
-      url: "#",
-      bootstrapIcon: "bi bi-facebook",
+      url: "https://linkedin.com/in/saifalamansari",
+      icon: Linkedin, // Lucide-react Facebook icon
     },
     {
       url: "#",
-      bootstrapIcon: "bi bi-twitter-x",
+      icon: Twitter, // Lucide-react Twitter icon
     },
     {
       url: "#",
-      bootstrapIcon: "bi bi-instagram",
+      icon: Instagram, // Lucide-react Instagram icon
     },
   ],
 };
@@ -93,24 +86,24 @@ export const servicesData = {
   services: [
     {
       number: "01",
-      bootstrapIcon: "bi bi-brush",
+      icon: Brush, // Store the icon as a reference, not as JSX
       title: "Design",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+        "I create visually stunning and user-friendly designs that enhance brand identity and improve user engagement. From UI/UX design to branding, my focus is on delivering aesthetically pleasing and functional solutions.",
     },
     {
       number: "02",
-      bootstrapIcon: "bi bi-code-slash",
+      icon: Code,
       title: "Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+        "I build high-performance, scalable, and responsive websites using modern technologies. Whether it's front-end or back-end development, I ensure clean, efficient, and maintainable code that meets industry standards.",
     },
     {
       number: "03",
-      bootstrapIcon: "bi bi-laptop",
-      title: "Marketing",
+      icon: Smartphone,
+      title: "App Development",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut",
+        "I develop robust and intuitive mobile applications for iOS and Android platforms. My approach focuses on seamless user experiences, performance optimization, and leveraging the latest frameworks to bring ideas to life.",
     },
   ],
 };
@@ -429,55 +422,36 @@ export const blogData = {
   ],
 };
 
-export const awardsData = {
+export const achievementsData = {
   mainData: {
     title: "Achievements",
-    title2: "Awa",
-    title2Span: "rds",
+    title2: "My",
+    title2Span: "Journey",
   },
-  awards: [
+  achievements: [
     {
-      title: "Best Designer of the Month",
+      title: "Top 1% React Developer",
       date: "2024",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+        "Recognized among the top 1% of React developers worldwide for delivering high-performance, scalable web applications.",
     },
     {
-      title: "The True Gem",
+      title: "Best UI/UX Designer",
       date: "2023",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et",
+        "Awarded for outstanding UI/UX design expertise, creating intuitive and visually appealing web experiences.",
     },
     {
-      title: "First Class Performer",
+      title: "Built 50+ Web Projects",
       date: "2022",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore",
+        "Successfully delivered over 50+ projects, helping businesses and startups build their online presence with modern web solutions.",
     },
     {
-      title: "Customers Favourite",
+      title: "10+ Satisfied Clients",
       date: "2021",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    },
-  ],
-};
-
-export const testimonialData = {
-  testimonial: [
-    {
-      name: "Alexander Warren",
-      avatar: TestimonialAvatar,
-      jobTitle: "CTO - Company",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-    },
-    {
-      name: "Alexander Warren",
-      avatar: TestimonialAvatar,
-      jobTitle: "CTO - Company",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+        "Achieved a milestone of 10+ global clients, delivering top-notch web applications and seamless user experiences.",
     },
   ],
 };
@@ -487,8 +461,8 @@ export const contactData = {
     title: "Contact",
     title2: "Let's",
     title2Span: "Talk",
-    phone: "+123 456 7890",
-    email: "contact@flatheme.net",
+    phone: "+91 9136858496",
+    email: "saifalam.st@gmail.com",
   },
 };
 
@@ -500,5 +474,5 @@ export const mapData = {
 };
 
 export const footerData = {
-  copyWriteText: "Developer Saif, All Rights Reserved.",
+  copyWriteText: "Made with Love By Developer Saif, All Rights Reserved.",
 };

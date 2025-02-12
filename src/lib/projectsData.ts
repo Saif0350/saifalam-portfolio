@@ -70,16 +70,16 @@ const projectsData: ProjectProps[] = [
     livePreview: "#",
     github: "#",
   },
-  {
-    id: 7,
-    image: "/projects/1.png",
-    title: "Food Delivery App",
-    description:
-      "A demo food delivery app showcasing menu browsing, order tracking, and online payments.",
-    techStack: ["Flutter", "Firebase", "Node.js"],
-    livePreview: "#",
-    github: "#",
-  },
+  // {
+  //   id: 7,
+  //   image: "/projects/1.png",
+  //   title: "Food Delivery App",
+  //   description:
+  //     "A demo food delivery app showcasing menu browsing, order tracking, and online payments.",
+  //   techStack: ["Flutter", "Firebase", "Node.js"],
+  //   livePreview: "#",
+  //   github: "#",
+  // },
 ];
 
 export default projectsData;

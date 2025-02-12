@@ -19,27 +19,41 @@ const Services = () => {
         </h2>
       </div>
       <div className="w-full lg:w-2/3 space-y-6">
-        {servicesData.services.map((item, index) => (
-          <div
-            key={index}
-            className="z-[1] p-8 space-y-3 md:space-y-0 md:flex md:items-center bg-darkBg rounded-lg relative overflow-hidden before:content-[''] before:absolute before:-z-[1] before:left-0 before:top-0 before:w-full before:h-full before:bg-themeGradient before:opacity-0 hover:before:opacity-10 before:transition-all before:ease-linear before:duration-100 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-themeGradient"
-          >
-            <div className="md:w-[15%] text-white">
-              <span className="font-outfit text-2xl xl:text-3xl font-medium">
-                {item.number}/
-              </span>
+        {servicesData.services.map((item, index) => {
+          const Icon = item.icon; // Get the icon component
+
+          return (
+            <div
+              key={index}
+              className="z-[1] p-8 space-y-3 md:space-y-0 md:flex md:items-center bg-darkBg rounded-lg relative overflow-hidden 
+            before:content-[''] before:absolute before:-z-[1] before:left-0 before:top-0 before:w-full before:h-full 
+            before:bg-themeGradient before:opacity-0 hover:before:opacity-10 before:transition-all before:ease-linear 
+            before:duration-100 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full 
+            after:h-[2px] after:bg-themeGradient"
+            >
+              {/* Number Section */}
+              <div className="md:w-[15%] text-white">
+                <span className="font-outfit text-2xl xl:text-3xl font-medium">
+                  {item.number}/
+                </span>
+              </div>
+
+              {/* Icon & Title Section */}
+              <div className="md:w-[40%] text-white flex items-center">
+                <Icon className="text-3xl" size={32} />{" "}
+                {/* Lucide-react icon */}
+                <h3 className="pl-3 font-outfit font-medium text-2xl xl:text-3xl">
+                  {item.title}
+                </h3>
+              </div>
+
+              {/* Description Section */}
+              <div className="md:w-[45%]">
+                <p className="text-white/70">{item.description}</p>
+              </div>
             </div>
-            <div className="md:w-[40%] text-white">
-              <i className={`${item.bootstrapIcon} text-3xl`}></i>
-              <h3 className="inline-flex pl-3 font-outfit font-medium text-2xl xl:text-3xl">
-                {item.title}
-              </h3>
-            </div>
-            <div className="md:w-[45%]">
-              <p className="text-white/70">{item.description}</p>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
