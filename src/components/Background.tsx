@@ -6,11 +6,13 @@ import { useFrame } from "@react-three/fiber";
 import { Canvas } from "@react-three/fiber";
 
 function Particles() {
-  const points = useRef();
+  const points = useRef<THREE.Points | null>(null);
 
-  useFrame((state) => {
-    points.current.rotation.y += 0.001;
-    points.current.rotation.x += 0.001;
+  useFrame(() => {
+    if (points.current) {
+      points.current.rotation.y += 0.001;
+      points.current.rotation.x += 0.001;
+    }
   });
 
   const particlesCount = 5000;
