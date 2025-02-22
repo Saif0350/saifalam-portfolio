@@ -1,4 +1,4 @@
-import HeroAvatar from "../../public/images/my_photu.jpg";
+import HeroAvatar from "../../public/images/my_photo.png";
 import ClientLogo from "../../public/images/client-logo.jpg";
 import BlogImg from "../../public/images/blog-img.jpg";
 import BlogImg2x from "../../public/images/blog-img@2x.jpg";

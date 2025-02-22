@@ -5,8 +5,8 @@ import Header from "@/components/Header/Header";
 import AosComp from "@/components/AosComp";
 import LenisWrapper from "@/components/LenisWrapper";
 import ScrollToTop from "@/components/ScrollToTop";
-import Footer from "@/components/Footer/Footer";
 import Cursor from "@/components/Cursor/Cursor";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Saif Alam Portfolio",
