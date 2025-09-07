@@ -1,6 +1,7 @@
 import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
 import Hero from "@/components/Hero/Hero";
+import MyEducation from "@/components/MyEducation/MyEducation";
 import MyProjectsComp from "@/components/MyProjectsComp/MyProjectsComp";
 import Awards from "@/components/NewComp/NewComp";
 import Services from "@/components/Services/Services";
@@ -16,6 +17,7 @@ export default function Home() {
           <Hero />
           <About />
           <Services />
+          <MyEducation />
           <MyProjectsComp />
           <TechStack />
           <Awards />

@@ -11,32 +11,55 @@ export interface ProjectProps {
 const projectsData: ProjectProps[] = [
   {
     id: 1,
-    image: "/projects/1.png",
-    title: "Aktar Paulin Sheds",
+    image: "/projects/7.png",
+    title: "Yovant Recruitment Services",
     description:
-      "A website for Aktar Paulin Sheds, showcasing industrial and commercial shed solutions.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-    livePreview: "https://aktarpaulinsheds.com",
+      "A website for Yovant Recruitment Services showcasing there various types of jobs in middle east and Singapore.",
+    techStack: [
+      "Next Js",
+      "Tailwind CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Typescript",
+    ],
+    livePreview: "https://yovantrecruitment.com",
     github: "#",
   },
   {
     id: 2,
-    image: "/projects/2.png",
-    title: "Ashma Enterprises",
+    image: "/projects/8.png",
+    title: "Golden Ratio Clinic",
     description:
-      "A business website for Ashma Enterprises, highlighting their services and products.",
-    techStack: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    livePreview: "https://ashmaenterprises.com/",
+      "A business website for Golden Ratio Clinic, showcasing their cosmetic and plastic surgery services and treatments.",
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "LENIS",
+      "Typescript",
+    ],
+    livePreview: "https://goldenratio.demo-web.live",
     github: "#",
   },
   {
     id: 3,
-    image: "/projects/3.png",
-    title: "Honest Haven",
+    image: "/projects/9.png",
+    title: "Thaiger Pharma ",
     description:
-      "A platform offering real estate solutions and property listings with seamless navigation.",
-    techStack: ["React", "Redux", "Firebase"],
-    livePreview: "https://honesthaven.in",
+      "A platform for Thaiger Nutraceuticals, showcasing their medicines, supplements, and health products with seamless navigation.",
+    techStack: [
+      "React",
+      "Redux",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "GSAP",
+      "LENIS",
+      "Typescript",
+    ],
+    livePreview: "https://thaigernutraceuticals.com",
     github: "#",
   },
   {
@@ -62,24 +85,14 @@ const projectsData: ProjectProps[] = [
 
   {
     id: 6,
-    image: "/projects/6.png",
-    title: "Tech Solutions Hub",
+    image: "/projects/3.png",
+    title: "Honest Haven",
     description:
-      "A landing page for a tech consultancy offering software development and cloud solutions.",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
-    livePreview: "#",
+      "A platform offering real estate solutions and property listings with seamless navigation.",
+    techStack: ["React", "Redux", "Firebase"],
+    livePreview: "https://honesthaven.in",
     github: "#",
   },
-  // {
-  //   id: 7,
-  //   image: "/projects/1.png",
-  //   title: "Food Delivery App",
-  //   description:
-  //     "A demo food delivery app showcasing menu browsing, order tracking, and online payments.",
-  //   techStack: ["Flutter", "Firebase", "Node.js"],
-  //   livePreview: "#",
-  //   github: "#",
-  // },
 ];
 
 export default projectsData;

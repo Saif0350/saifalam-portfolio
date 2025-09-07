@@ -46,14 +46,6 @@ export const ProjectCard2 = ({ project, index }: ProjectCardProps) => {
             >
               <LinkIcon className="w-6 h-6 text-gray-900" />
             </a>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full hover:bg-gray-100 transition"
-            >
-              <Github className="w-6 h-6 text-gray-900" />
-            </a>
           </div>
         </div>
 
