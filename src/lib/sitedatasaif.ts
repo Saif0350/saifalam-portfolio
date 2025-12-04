@@ -46,7 +46,7 @@ export const aboutData = {
     name: "Saif Alam Ansari",
     heroAvatar: HeroAvatar,
     biography:
-      "With 1.4 years of full-time and 3 years of part-time experience as a Full Stack Developer, I specialize in building high-performance web applications using React.js and Next.js. My expertise extends to UI/UX Design and App Development, with a focus on delivering scalable, user-centric digital solutions that help businesses thrive.",
+      "With 1.5 years of full-time and 3 years of part-time experience as a Full Stack Developer, I specialize in building high-performance web applications using React.js and Next.js. My expertise extends to UI/UX Design and App Development, with a focus on delivering scalable, user-centric digital solutions that help businesses thrive.",
     projectsDone: "50",
     yearsOfExperience: "4",
     worldwideClients: "10",
