@@ -64,16 +64,6 @@ const projectsData: ProjectProps[] = [
   },
   {
     id: 4,
-    image: "/projects/4.png",
-    title: "Maps Venture",
-    description:
-      "An interactive maps and travel platform helping users discover new destinations.",
-    techStack: ["React", "API Integration", "Tailwind CSS"],
-    livePreview: "https://mapsventure.in/",
-    github: "#",
-  },
-  {
-    id: 5,
     image: "/projects/10.png",
     title: "Peace Power",
     description:
@@ -83,8 +73,19 @@ const projectsData: ProjectProps[] = [
     github: "#",
   },
   {
+    id: 5,
+    image: "/projects/11.png",
+    title: "MRM Decors",
+    description:
+      "A website showcasing MRM Decors' premium interior and exterior decoration services.",
+    techStack: ["Next.js", "MongoDB", "Express"],
+    livePreview: "https://mrmdecors.com/",
+    github: "#",
+  },
+
+  {
     id: 6,
-    image: "/projects/3.png",
+    image: "/projects/12.png",
     title: "Honest Haven",
     description:
       "A platform offering real estate solutions and property listings with seamless navigation.",
