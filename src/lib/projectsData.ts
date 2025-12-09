@@ -74,15 +74,14 @@ const projectsData: ProjectProps[] = [
   },
   {
     id: 5,
-    image: "/projects/5.png",
-    title: "MRM Decors",
+    image: "/projects/10.png",
+    title: "Peace Power",
     description:
-      "A website showcasing MRM Decors' premium interior and exterior decoration services.",
-    techStack: ["Next.js", "MongoDB", "Express"],
-    livePreview: "https://mrmdecors.com/",
+      "A full-stack platform built for Peace Power to showcase industrial products such as link boxes, SVL, cable rollers, and cable cleats, featuring a scalable backend and modern UI.",
+    techStack: ["Next.js", "Node.js", "Express", "PostgreSQL"],
+    livePreview: "https://peacepowerfrontend.demo-web.live/",
     github: "#",
   },
-
   {
     id: 6,
     image: "/projects/3.png",
