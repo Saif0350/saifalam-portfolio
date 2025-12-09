@@ -1,7 +1,8 @@
 "use client";
-
+import toast from "react-hot-toast";
 import { contactData } from "@/lib/sitedatasaif";
 import React, { useState } from "react";
+import { send } from "@/mail/sendMail";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -22,16 +23,30 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const { name, email, subject, message } = formData;
+
+    if (!name || !email || !subject || !message) {
+      toast.error("All fields are required.");
+      return;
+    }
+
     setStatus("loading");
+
+    const sendPromise = send({ name, email, subject, message });
+
+    toast.promise(sendPromise, {
+      loading: "Sending message...",
+      success: "Message sent successfully! 📩",
+      error: "Failed to send message. Try again!",
+    });
+
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        setStatus("success");
+      const success = await sendPromise;
+
+      if (success) {
         setFormData({ name: "", email: "", subject: "", message: "" });
+        setStatus("success");
       } else {
         setStatus("error");
       }

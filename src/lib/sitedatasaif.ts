@@ -30,8 +30,8 @@ export const headerData = {
       title: "Portfolio",
     },
     {
-      url: "/#awards",
-      title: "Awards",
+      url: "/#experience",
+      title: "Experience",
     },
 
     {
@@ -421,7 +421,7 @@ export const blogData = {
 
 export const achievementsData = {
   mainData: {
-    title: "Achievements",
+    title: "Experience",
     title2: "My",
     title2Span: "Journey",
   },
@@ -449,6 +449,45 @@ export const achievementsData = {
       date: "2021",
       description:
         "Achieved a milestone of 10+ global clients, delivering top-notch web applications and seamless user experiences.",
+    },
+  ],
+
+  experience: [
+    {
+      title: "Full-Stack Developer",
+      company: "Sagar-Tech Technical Solutions",
+      location: "Mumbai, Maharashtra",
+      companyLink: "https://sagartech.co.in",
+      date: "July 2024 – November 2025",
+      points: [
+        "Developed and optimized high-performance, visually engaging websites using React.js, Next.js, GSAP, and Lenis, enhancing user experience through smooth animations and interactions.",
+        "Built and deployed responsive web applications across domains like medicine, consultancy, and hospitality with SEO-friendly architecture and cross-browser support.",
+        "Leveraged LLMs and AI-driven tools to streamline development workflows, enabling fluid visual effects and improved application performance.",
+      ],
+    },
+    {
+      title: "Frontend Developer Intern",
+      company: "engineerHub",
+      location: "Noida NCR, UP",
+      companyLink: "https://engineerhub.in",
+      date: "Nov 2023 – April 2024",
+      points: [
+        "Designed and developed a complete referral platform including resume services, consultancy booking, and digital product system.",
+        "Integrated Razorpay payment gateway to support secure premium services and product purchases.",
+        "Improved the Campus job listing section with a structured UI, enhancing job discovery and user flow.",
+      ],
+    },
+    {
+      title: "Web Developer",
+      company: "Sagar-Tech Technical Solutions",
+      location: "Mumbai, Maharashtra",
+      companyLink: "https://sagartech.co.in",
+      date: "March 2021 – Oct 2023",
+      points: [
+        "Built and maintained responsive websites using React, JavaScript, HTML, CSS, and Tailwind CSS ensuring performance and accessibility across devices.",
+        "Developed websites including euradicle.com, activepixel.in, and newqualityware.com, along with various portfolio-based static and dynamic sites.",
+        "Gained hands-on experience with Angular while improving skills in modern frontend workflows and UI implementation.",
+      ],
     },
   ],
 };
