@@ -7,6 +7,7 @@ import LenisWrapper from "@/components/LenisWrapper";
 import ScrollToTop from "@/components/ScrollToTop";
 import Cursor from "@/components/Cursor/Cursor";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Saif Alam Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LenisWrapper>
+          <Toaster />
           <AosComp />
           <Header />
           {children}
