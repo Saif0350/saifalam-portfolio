@@ -33,7 +33,7 @@ export default function Home() {
           <About />
           <Services />
           <MyEducation />
-          <MyProjectsComp />
+          {/* <MyProjectsComp /> */}
           <TechStack />
           <Awards />
         </Wrapper>
