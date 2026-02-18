@@ -102,3 +102,36 @@ body {
     animation-delay: 600ms;
   }
 }
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  will-change: transform;
+  animation: carousel-slide var(--iteration-time, 20s) linear infinite;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: calc(var(--slide-width, 270px));
+  padding: 0 8px; /* keep spacing INSIDE slide (not as flex gap) */
+}
+
+@media (max-width: 640px) {
+  .carousel-slide {
+    width: calc(var(--slide-width-small, 300px));
+  }
+}
+
+/* ✅ translate by 50% because track is 2x slides */
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

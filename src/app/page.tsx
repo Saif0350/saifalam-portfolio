@@ -30,7 +30,7 @@ export default function Home() {
         </div> */}
         <Wrapper>
           <Hero />
-          <About />
+          {/* <About /> */}
           <Services />
           <MyEducation />
           {/* <MyProjectsComp /> */}
