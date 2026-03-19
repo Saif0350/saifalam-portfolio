@@ -16,7 +16,7 @@ export default function Contact() {
   >("idle");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -74,7 +74,7 @@ export default function Contact() {
         </div>
         <div className="w-full lg:w-2/3">
           {/* Contact Info */}
-          <div className="flex">
+          <div className="flex md:flex-row flex-row">
             <div className="w-1/2">
               <h6 className="font-outfit font-medium uppercase text-sm tracking-wider text-white mb-2">
                 Email:
