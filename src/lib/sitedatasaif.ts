@@ -38,6 +38,10 @@ export const headerData = {
       url: "/#contact",
       title: "Contact",
     },
+    {
+      url: "/resume",
+      title: "Resume",
+    },
   ],
 };
 
