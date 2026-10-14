@@ -501,7 +501,8 @@ export const contactData = {
     title: "Contact",
     title2: "Let's",
     title2Span: "Talk",
-    phone: "+91 9136858496",
+    phone: "+44 7349 584838",
+    whatsapp: "447349584838",
     email: "saifalam.st@gmail.com",
   },
 };

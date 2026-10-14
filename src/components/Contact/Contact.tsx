@@ -74,24 +74,47 @@ export default function Contact() {
         </div>
         <div className="w-full lg:w-2/3">
           {/* Contact Info */}
-          <div className="flex md:flex-row flex-row">
-            <div className="w-1/2">
+
+          {/* Contact Info */}
+          <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+            {/* Email */}
+            <div className="w-full md:w-1/2 min-w-0">
               <h6 className="font-outfit font-medium uppercase text-sm tracking-wider text-white mb-2">
                 Email:
               </h6>
-              <h3 className="font-outfit font-medium text-2xl lg:text-3xl text-white">
-                {contactData.mainData.email}
+
+              <h3 className="font-outfit font-medium text-xl lg:text-2xl text-white break-all">
+                <a
+                  href={`mailto:${contactData.mainData.email}`}
+                  className="hover:text-purple-400 transition-colors duration-300"
+                >
+                  {contactData.mainData.email}
+                </a>
               </h3>
             </div>
-            <div className="w-1/2">
+
+            {/* WhatsApp */}
+            <div className="w-full md:w-1/2 min-w-0">
               <h6 className="font-outfit font-medium uppercase text-sm tracking-wider text-white mb-2">
-                Call:
+                WhatsApp:
               </h6>
-              <h3 className="font-outfit font-medium text-2xl lg:text-3xl text-white">
-                {contactData.mainData.phone}
+
+              <h3 className="font-outfit font-medium text-xl lg:text-2xl text-white">
+                <a
+                  href={`https://wa.me/${contactData.mainData.whatsapp}?text=${encodeURIComponent(
+                    "Hi, I visited your portfolio and would like to connect.",
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400 transition-colors duration-300"
+                  aria-label="Chat with me on WhatsApp"
+                >
+                  {contactData.mainData.phone}
+                </a>
               </h3>
             </div>
           </div>
+
           {/* Contact Form */}
           <div className="mt-8 lg:text-right">
             <form
