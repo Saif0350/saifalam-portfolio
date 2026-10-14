@@ -1,6 +1,32 @@
 export const educationDetails = [
   {
     stepNumber: "01",
+    title: "Master of Science (MSc) in Computer Science",
+    details: [
+      {
+        heading: "Degree:",
+        description: "Master of Science in Computer Science",
+      },
+      {
+        heading: "University:",
+        description: "University of East London (UEL), London, United Kingdom",
+      },
+      {
+        heading: "Graduation Year:",
+        description: "Expected 2027",
+      },
+
+      {
+        heading: "Key Highlights:",
+        description:
+          "Developing expertise in Artificial Intelligence, Machine Vision, Cloud Computing, Big Data Analytics, and Advanced Software Engineering, alongside leadership, problem-solving, presentation, and cross-functional teamwork skills.",
+      },
+    ],
+    image:
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    stepNumber: "02",
     title: "Bachelor of Technology (B.Tech)",
     details: [
       {
@@ -27,7 +53,7 @@ export const educationDetails = [
       "https://images.unsplash.com/photo-1581090700227-4c4e3b4b58f6?auto=format&fit=crop&w=800&q=80",
   },
   {
-    stepNumber: "02",
+    stepNumber: "03",
     title: "Diploma in Computer Engineering",
     details: [
       {

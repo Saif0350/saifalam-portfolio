@@ -1,251 +1,315 @@
-img {
-  vertical-align: middle;
+/* =====================================
+   EDUCATION SECTION
+===================================== */
+
+.education-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.education-section .section-timeline-heading {
+  margin-bottom: 40px;
+}
+
+/* =====================================
+   MAIN CARD
+===================================== */
+
+.education-card {
   width: 100%;
-  display: inline-block;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 30px;
+
+  background: #111116;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  overflow: hidden;
 }
 
-.heading {
-  font-size: 50px;
-  background: #ff6a00;
-  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* =====================================
+   PROGRESS INDICATORS
+===================================== */
+
+.education-progress {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 30px;
 }
 
-.inline-block {
-  max-width: 100%;
-  display: inline-block;
+.education-progress-bar {
+  flex: 1;
+  height: 4px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+
+  transition:
+    background 0.4s ease,
+    transform 0.3s ease;
 }
 
-.page-wrapper {
-  z-index: 0;
-  background-color: #000;
+.education-progress-bar.active {
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #a855f7);
+}
+
+.education-progress-bar:hover {
+  transform: scaleY(1.5);
+}
+
+/* =====================================
+   STEP COUNTER
+===================================== */
+
+.education-step {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 20px;
+}
+
+/* =====================================
+   ANIMATION CONTAINER
+===================================== */
+
+.education-animation-container {
   position: relative;
+  height: 390px;
+  overflow: hidden;
 }
 
-.container {
-  width: 90vw;
-  max-width: 1360px;
-  margin-left: auto;
-  margin-right: auto;
+/* Animated slide fills container */
+
+.education-slide {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
-.margin-bottom-medium {
-  margin-bottom: 28px;
+/* =====================================
+   INTERNAL SCROLLING
+===================================== */
+
+.education-slide-scroll {
+  width: 100%;
+  height: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 5px 15px 25px 0;
+
+  overscroll-behavior-y: contain;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: thin;
+  scrollbar-color: #a855f7 #24242b;
 }
 
-.paragraph-large {
-  letter-spacing: -0.02em;
-  font-size: 20px;
+/* Chrome, Safari, Edge */
+
+.education-slide-scroll::-webkit-scrollbar {
+  width: 6px;
 }
 
-.section-timeline-heading {
-  background-color: #000;
+.education-slide-scroll::-webkit-scrollbar-track {
+  background: #24242b;
+  border-radius: 10px;
 }
 
-.padding-vertical-xlarge {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.education-slide-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff6a00, #ee0979, #a855f7);
+  border-radius: 10px;
 }
 
-.timeline-main_heading-wrapper {
-  color: #fff;
-  text-align: center;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
+.education-slide-scroll::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
 }
 
-.timeline_component {
+/* =====================================
+   EDUCATION CONTENT
+===================================== */
+
+.education-slide h3 {
+  line-height: 1.3;
+}
+
+.education-details {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  position: relative;
+  gap: 18px;
 }
 
-.timeline_item {
-  z-index: 2;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  grid-template-rows: auto;
-  grid-template-columns: 200px 200px 1fr;
-  grid-auto-columns: 1fr;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: grid;
-  position: relative;
-}
+.education-detail-heading {
+  display: block;
+  color: #e5b96b;
 
-.timeline_left {
-  text-align: right;
-  justify-content: flex-end;
-  align-items: stretch;
-}
-
-.timeline_centre {
-  justify-content: center;
-  display: flex;
-}
-
-.timeline_date-text {
-  /* color: #fff;
-  letter-spacing: -0.03em;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 1.2; */
-  position: sticky;
-  top: 50vh;
-}
-
-.timeline_text {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.timeline_circle {
-  background-color: #000;
-  border-radius: 100%;
-  width: 15px;
-  min-width: 15px;
-  max-width: 15px;
-  height: 15px;
-  min-height: 15px;
-  max-height: 15px;
-  position: sticky;
-  top: 51vh;
-  box-shadow: 0 0 0 8px #fffaec;
-}
-
-.timeline_progress {
-  z-index: 0;
-  background-color: #414141;
-  width: 3px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 298px;
-}
-
-.timeline_progress-bar {
-  z-index: 1;
-  background: linear-gradient(to bottom, #ff82f3, #400d64);
-  width: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.section-timeline {
-  z-index: -3;
-  background-color: #000;
-  position: relative;
-}
-
-.margin-bottom-xlarge {
-  /* margin-bottom: 35px; */
-}
-
-.timeline_link {
-  opacity: 0.6;
-  color: #fff;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  border-radius: 8px;
-  align-items: center;
   font-size: 14px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-decoration: none;
-  transition: opacity 0.3s;
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+.education-detail p {
+  color: #d1d5db;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.education-navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  margin-top: 25px;
 }
 
-.timeline_link:hover {
-  opacity: 1;
+.education-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 30px;
+  padding: 12px 22px;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.link-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
+/* Previous */
+
+.education-nav-btn.previous {
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.inline-block {
-  display: inline-block;
+/* Next */
+
+.education-nav-btn.next {
+  color: #fff;
+
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #a855f7);
+
+  border: 1px solid transparent;
 }
 
-.text-colour-lightgrey {
-  color: #ffffffa6;
+/* Hover */
+
+.education-nav-btn:not(:disabled):hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 6px 22px rgba(168, 85, 247, 0.2);
 }
 
-.overlay-fade-top {
-  background-image: linear-gradient(#000, transparent);
-  height: 80px;
-  position: absolute;
-  inset: 0% 0% auto;
+/* Disabled */
+
+.education-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
-.overlay-fade-bottom {
-  background-image: linear-gradient(to top, #000, transparent);
-  height: 80px;
-  position: absolute;
-  inset: auto 0% 0%;
+/* =====================================
+   SCROLL HINT
+===================================== */
+
+.education-hint {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 767px) {
-  h2 {
-    font-size: 40px;
-  }
-  .paragraph-large {
-    font-size: 18px;
-  }
+/* =====================================
+   TABLET
+===================================== */
 
-  .padding-vertical-xlarge {
+@media (max-width: 1024px) {
+  .education-section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
-  .timeline_item {
-    grid-template-columns: 50px 1fr;
-    width: 100% !important;
+  .education-card {
+    padding: 25px;
+  }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+  .education-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
-  .timeline_left {
-    text-align: left;
-    grid-area: 1 / 2 / 2 / 3;
+  .education-card {
+    padding: 20px;
+    border-radius: 16px;
   }
 
-  .timeline_centre {
-    justify-content: flex-start;
-    grid-area: 1 / 1 / 3 / 2;
+  .education-animation-container {
+    height: 350px;
   }
 
-  .timeline_right {
-    grid-area: span 1 / span 1 / span 1 / span 1;
+  .education-slide-scroll {
+    padding-right: 10px;
   }
 
-  .timeline_date-text {
-    margin-bottom: 24px;
-    font-size: 36px;
+  .education-slide h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 20px;
   }
 
-  .timeline_text {
-    font-size: 20px;
+  .education-details {
+    gap: 15px;
   }
 
-  .timeline_progress {
-    left: 6px;
+  .education-detail-heading {
+    font-size: 13px;
   }
 
-  .margin-bottom-xlarge {
-    margin-bottom: 48px;
+  .education-detail p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .education-nav-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .education-progress-bar,
+  .education-nav-btn {
+    transition: none;
   }
 }
