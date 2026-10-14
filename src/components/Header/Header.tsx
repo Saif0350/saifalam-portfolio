@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div className="z-10 fixed top-0 left-0 w-full py-5">
-      <div className="container mx-auto max-w-[1600px] px-5 md:px-0">
+      <div className="container mx-auto max-w-[1600px] px-5 md:px-20">
         <div className="flex justify-between relative">
           {/* Header Logo */}
           <div className="text-3xl md:block hidden font-outfit font-medium text-white">
