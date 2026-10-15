@@ -50,7 +50,7 @@ export default function ResumePage() {
           </div>
 
           <h1 className="font-outfit text-7xl font-bold tracking-tight stroke-text md:text-8xl lg:text-9xl">
-            RESUME.
+            <span>{`"RESUME"`}</span>
           </h1>
 
           <h2 className="mt-8 text-2xl font-semibold md:text-4xl">
