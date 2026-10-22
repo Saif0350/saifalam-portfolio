@@ -9,18 +9,20 @@ type CSSVars = React.CSSProperties & {
 
 const ImageCarouselMain = () => {
   const slides = [
-    "/assets/carousel/1.jpg",
-    "/assets/carousel/2.jpg",
-    "/assets/carousel/3.jpg",
+    "/my-images/1.jpeg",
+    "/my-images/2.jpeg",
+    "/my-images/3.jpeg",
+    // "/my-images/4.jpeg",
+    "/my-images/5.jpeg",
   ];
 
-  const trackSlides = [...slides, ...slides, ...slides];
+  const trackSlides = [...slides, ...slides, ...slides, ...slides];
 
   const styleVars: CSSVars = {
     "--no-of-slides": slides.length,
     "--slide-width": "270px",
     "--slide-width-small": "300px",
-    "--iteration-time": "10s",
+    "--iteration-time": "15s",
   };
 
   return (
