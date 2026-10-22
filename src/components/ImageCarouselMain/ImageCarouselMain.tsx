@@ -27,7 +27,7 @@ const ImageCarouselMain = () => {
 
   return (
     <section className="max-w-7xl px-8 mx-auto mt-6 md:mt-8">
-      <Link href="#work" className="block">
+      <Link href="/" className="block">
         <div className="rounded-lg md:rounded-xl overflow-hidden">
           <div className="carousel" style={styleVars}>
             <div className="carousel-track">
