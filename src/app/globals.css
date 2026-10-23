@@ -110,8 +110,18 @@ body {
 
 .carousel-track {
   display: flex;
+  width: max-content;
   will-change: transform;
-  animation: carousel-slide var(--iteration-time, 20s) linear infinite;
+  animation: carousel-slide var(--iteration-time, 30s) linear infinite;
+}
+
+@keyframes carousel-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%); /* ← was -50% */
+  }
 }
 
 .carousel-slide {
