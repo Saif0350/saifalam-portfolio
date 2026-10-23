@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-row items-center space-x-3">
             <Link
-              href="https://linkedin.com/in/annafilou"
+              href="https://linkedin.com/in/saifalamansari"
               title="LinkedIn"
               target="_blank"
               className="inline-block w-8 h-8 rounded transition-transform duration-300 hover:-rotate-12"
@@ -59,7 +59,7 @@ const Hero = () => {
             </Link>
 
             <Link
-              href="https://github.com/anna-filou?tab=repositories"
+              href="https://github.com/saif0350"
               title="GitHub"
               target="_blank"
               className="inline-block w-8 h-8 rounded transition-transform duration-300 hover:-rotate-12"
